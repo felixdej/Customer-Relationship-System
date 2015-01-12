@@ -25,13 +25,16 @@ Partial Class Contact_Form
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txt_firstName = New System.Windows.Forms.TextBox()
+        Me.txt_phoneNumber = New System.Windows.Forms.TextBox()
+        Me.txt_middleName = New System.Windows.Forms.TextBox()
+        Me.txt_lastName = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.txt_email = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.btn_NewContact = New System.Windows.Forms.Button()
+        Me.lbl_test = New System.Windows.Forms.Label()
+        Me.btn_Back = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -64,33 +67,33 @@ Partial Class Contact_Form
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Last Name:"
         '
-        'TextBox1
+        'txt_firstName
         '
-        Me.TextBox1.Location = New System.Drawing.Point(120, 35)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 3
+        Me.txt_firstName.Location = New System.Drawing.Point(120, 35)
+        Me.txt_firstName.Name = "txt_firstName"
+        Me.txt_firstName.Size = New System.Drawing.Size(192, 20)
+        Me.txt_firstName.TabIndex = 3
         '
-        'TextBox2
+        'txt_phoneNumber
         '
-        Me.TextBox2.Location = New System.Drawing.Point(120, 113)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 4
+        Me.txt_phoneNumber.Location = New System.Drawing.Point(120, 113)
+        Me.txt_phoneNumber.Name = "txt_phoneNumber"
+        Me.txt_phoneNumber.Size = New System.Drawing.Size(192, 20)
+        Me.txt_phoneNumber.TabIndex = 4
         '
-        'TextBox3
+        'txt_middleName
         '
-        Me.TextBox3.Location = New System.Drawing.Point(120, 61)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 5
+        Me.txt_middleName.Location = New System.Drawing.Point(120, 61)
+        Me.txt_middleName.Name = "txt_middleName"
+        Me.txt_middleName.Size = New System.Drawing.Size(192, 20)
+        Me.txt_middleName.TabIndex = 5
         '
-        'TextBox4
+        'txt_lastName
         '
-        Me.TextBox4.Location = New System.Drawing.Point(120, 87)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox4.TabIndex = 6
+        Me.txt_lastName.Location = New System.Drawing.Point(120, 87)
+        Me.txt_lastName.Name = "txt_lastName"
+        Me.txt_lastName.Size = New System.Drawing.Size(192, 20)
+        Me.txt_lastName.TabIndex = 6
         '
         'Label4
         '
@@ -102,12 +105,12 @@ Partial Class Contact_Form
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Phone Number:"
         '
-        'TextBox5
+        'txt_email
         '
-        Me.TextBox5.Location = New System.Drawing.Point(120, 139)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox5.TabIndex = 8
+        Me.txt_email.Location = New System.Drawing.Point(120, 139)
+        Me.txt_email.Name = "txt_email"
+        Me.txt_email.Size = New System.Drawing.Size(192, 20)
+        Me.txt_email.TabIndex = 8
         '
         'Label5
         '
@@ -119,18 +122,50 @@ Partial Class Contact_Form
         Me.Label5.TabIndex = 9
         Me.Label5.Text = "Email:"
         '
+        'btn_NewContact
+        '
+        Me.btn_NewContact.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_NewContact.Location = New System.Drawing.Point(13, 299)
+        Me.btn_NewContact.Name = "btn_NewContact"
+        Me.btn_NewContact.Size = New System.Drawing.Size(207, 63)
+        Me.btn_NewContact.TabIndex = 10
+        Me.btn_NewContact.Text = "Add Contact"
+        Me.btn_NewContact.UseVisualStyleBackColor = True
+        '
+        'lbl_test
+        '
+        Me.lbl_test.AutoSize = True
+        Me.lbl_test.Location = New System.Drawing.Point(187, 222)
+        Me.lbl_test.Name = "lbl_test"
+        Me.lbl_test.Size = New System.Drawing.Size(76, 13)
+        Me.lbl_test.TabIndex = 11
+        Me.lbl_test.Text = "New Customer"
+        '
+        'btn_Back
+        '
+        Me.btn_Back.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_Back.Location = New System.Drawing.Point(226, 299)
+        Me.btn_Back.Name = "btn_Back"
+        Me.btn_Back.Size = New System.Drawing.Size(207, 63)
+        Me.btn_Back.TabIndex = 12
+        Me.btn_Back.Text = "Back"
+        Me.btn_Back.UseVisualStyleBackColor = True
+        '
         'Contact_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(509, 374)
+        Me.ClientSize = New System.Drawing.Size(445, 374)
+        Me.Controls.Add(Me.btn_Back)
+        Me.Controls.Add(Me.lbl_test)
+        Me.Controls.Add(Me.btn_NewContact)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.txt_email)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txt_lastName)
+        Me.Controls.Add(Me.txt_middleName)
+        Me.Controls.Add(Me.txt_phoneNumber)
+        Me.Controls.Add(Me.txt_firstName)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -143,11 +178,14 @@ Partial Class Contact_Form
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents txt_firstName As System.Windows.Forms.TextBox
+    Friend WithEvents txt_phoneNumber As System.Windows.Forms.TextBox
+    Friend WithEvents txt_middleName As System.Windows.Forms.TextBox
+    Friend WithEvents txt_lastName As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents txt_email As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents btn_NewContact As System.Windows.Forms.Button
+    Friend WithEvents lbl_test As System.Windows.Forms.Label
+    Friend WithEvents btn_Back As System.Windows.Forms.Button
 End Class

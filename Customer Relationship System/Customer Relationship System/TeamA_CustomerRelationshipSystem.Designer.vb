@@ -70,13 +70,12 @@ Partial Class CustomerRelationshipSystem
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(610, 471)
+        Me.ClientSize = New System.Drawing.Size(619, 471)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label2)
         Me.Name = "CustomerRelationshipSystem"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds
         Me.Text = "Customer Relationship Program"
         Me.ResumeLayout(False)
         Me.PerformLayout()
