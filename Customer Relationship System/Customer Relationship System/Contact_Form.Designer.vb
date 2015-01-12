@@ -72,7 +72,7 @@ Partial Class Contact_Form
         Me.txt_firstName.Location = New System.Drawing.Point(120, 35)
         Me.txt_firstName.Name = "txt_firstName"
         Me.txt_firstName.Size = New System.Drawing.Size(192, 20)
-        Me.txt_firstName.TabIndex = 3
+        Me.txt_firstName.TabIndex = 1
         '
         'txt_phoneNumber
         '
@@ -86,14 +86,14 @@ Partial Class Contact_Form
         Me.txt_middleName.Location = New System.Drawing.Point(120, 61)
         Me.txt_middleName.Name = "txt_middleName"
         Me.txt_middleName.Size = New System.Drawing.Size(192, 20)
-        Me.txt_middleName.TabIndex = 5
+        Me.txt_middleName.TabIndex = 2
         '
         'txt_lastName
         '
         Me.txt_lastName.Location = New System.Drawing.Point(120, 87)
         Me.txt_lastName.Name = "txt_lastName"
         Me.txt_lastName.Size = New System.Drawing.Size(192, 20)
-        Me.txt_lastName.TabIndex = 6
+        Me.txt_lastName.TabIndex = 3
         '
         'Label4
         '
@@ -110,7 +110,7 @@ Partial Class Contact_Form
         Me.txt_email.Location = New System.Drawing.Point(120, 139)
         Me.txt_email.Name = "txt_email"
         Me.txt_email.Size = New System.Drawing.Size(192, 20)
-        Me.txt_email.TabIndex = 8
+        Me.txt_email.TabIndex = 5
         '
         'Label5
         '
@@ -125,17 +125,17 @@ Partial Class Contact_Form
         'btn_NewContact
         '
         Me.btn_NewContact.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_NewContact.Location = New System.Drawing.Point(13, 299)
+        Me.btn_NewContact.Location = New System.Drawing.Point(12, 165)
         Me.btn_NewContact.Name = "btn_NewContact"
         Me.btn_NewContact.Size = New System.Drawing.Size(207, 63)
-        Me.btn_NewContact.TabIndex = 10
+        Me.btn_NewContact.TabIndex = 6
         Me.btn_NewContact.Text = "Add Contact"
         Me.btn_NewContact.UseVisualStyleBackColor = True
         '
         'lbl_test
         '
         Me.lbl_test.AutoSize = True
-        Me.lbl_test.Location = New System.Drawing.Point(187, 222)
+        Me.lbl_test.Location = New System.Drawing.Point(318, 38)
         Me.lbl_test.Name = "lbl_test"
         Me.lbl_test.Size = New System.Drawing.Size(76, 13)
         Me.lbl_test.TabIndex = 11
@@ -144,10 +144,10 @@ Partial Class Contact_Form
         'btn_Back
         '
         Me.btn_Back.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_Back.Location = New System.Drawing.Point(226, 299)
+        Me.btn_Back.Location = New System.Drawing.Point(226, 165)
         Me.btn_Back.Name = "btn_Back"
         Me.btn_Back.Size = New System.Drawing.Size(207, 63)
-        Me.btn_Back.TabIndex = 12
+        Me.btn_Back.TabIndex = 7
         Me.btn_Back.Text = "Back"
         Me.btn_Back.UseVisualStyleBackColor = True
         '
@@ -155,7 +155,7 @@ Partial Class Contact_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(445, 374)
+        Me.ClientSize = New System.Drawing.Size(445, 248)
         Me.Controls.Add(Me.btn_Back)
         Me.Controls.Add(Me.lbl_test)
         Me.Controls.Add(Me.btn_NewContact)
