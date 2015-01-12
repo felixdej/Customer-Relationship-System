@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class CustomerRelationshipSystem
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -39,16 +39,16 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Times New Roman", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(87, 9)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(454, 37)
+        Me.Label4.Size = New System.Drawing.Size(399, 36)
         Me.Label4.TabIndex = 5
         Me.Label4.Text = "Customer Relationship System"
         '
         'Button1
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(12, 322)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(263, 126)
@@ -58,7 +58,7 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Location = New System.Drawing.Point(335, 322)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(263, 126)
@@ -66,7 +66,7 @@ Partial Class Form1
         Me.Button2.Text = "Sales"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'Form1
+        'CustomerRelationshipSystem
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -75,8 +75,9 @@ Partial Class Form1
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label2)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Name = "CustomerRelationshipSystem"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds
+        Me.Text = "Customer Relationship Program"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
