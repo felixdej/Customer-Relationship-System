@@ -1,6 +1,6 @@
-﻿Public Class Contact_Form
+﻿Public Class Contact
     'Var
-    Private customer(99) As Customer
+    Public customer(99) As Customer
     Private count As Integer
 
     Private Sub btn_NewContact_Click(sender As Object, e As EventArgs) Handles btn_NewContact.Click

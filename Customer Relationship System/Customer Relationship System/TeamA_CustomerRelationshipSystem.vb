@@ -1,11 +1,16 @@
 ﻿Public Class CustomerRelationshipSystem
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub btn_NewContact_Click(sender As Object, e As EventArgs) Handles btn_NewContact.Click
         Me.Hide()
-        Contact_Form.Show()
+        Contact.Show()
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub btn_Exit_Click(sender As Object, e As EventArgs) Handles btn_Exit.Click
         Me.Close()
+    End Sub
+
+    Private Sub btn_PotentialClient_Click(sender As Object, e As EventArgs) Handles btn_PotentialClient.Click
+        Me.Hide()
+        PotentialClient.Show()
     End Sub
 End Class

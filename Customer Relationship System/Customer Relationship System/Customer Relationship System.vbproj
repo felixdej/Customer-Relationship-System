@@ -71,10 +71,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Customer.vb" />
-    <Compile Include="Contact_Form.Designer.vb">
-      <DependentUpon>Contact_Form.vb</DependentUpon>
+    <Compile Include="Contact.Designer.vb">
+      <DependentUpon>Contact.vb</DependentUpon>
     </Compile>
-    <Compile Include="Contact_Form.vb">
+    <Compile Include="Contact.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Potential Client.Designer.vb">
+      <DependentUpon>Potential Client.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Potential Client.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TeamA_CustomerRelationshipSystem.vb">
@@ -101,8 +107,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Contact_Form.resx">
-      <DependentUpon>Contact_Form.vb</DependentUpon>
+    <EmbeddedResource Include="Potential Client.resx">
+      <DependentUpon>Potential Client.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact.resx">
+      <DependentUpon>Contact.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TeamA_CustomerRelationshipSystem.resx">
       <DependentUpon>TeamA_CustomerRelationshipSystem.vb</DependentUpon>
