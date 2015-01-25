@@ -27,7 +27,6 @@ Partial Class PotentialClient
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txt_lastName = New System.Windows.Forms.TextBox()
         Me.txt_middleName = New System.Windows.Forms.TextBox()
-        Me.txt_phoneNumber = New System.Windows.Forms.TextBox()
         Me.txt_firstName = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -38,6 +37,7 @@ Partial Class PotentialClient
         Me.cb_2 = New System.Windows.Forms.CheckBox()
         Me.cb_3 = New System.Windows.Forms.CheckBox()
         Me.lbl_ContactAttempts = New System.Windows.Forms.Label()
+        Me.mtxt_phoneNumber = New System.Windows.Forms.MaskedTextBox()
         Me.SuspendLayout()
         '
         'Label5
@@ -80,13 +80,6 @@ Partial Class PotentialClient
         Me.txt_middleName.Name = "txt_middleName"
         Me.txt_middleName.Size = New System.Drawing.Size(192, 20)
         Me.txt_middleName.TabIndex = 13
-        '
-        'txt_phoneNumber
-        '
-        Me.txt_phoneNumber.Location = New System.Drawing.Point(119, 113)
-        Me.txt_phoneNumber.Name = "txt_phoneNumber"
-        Me.txt_phoneNumber.Size = New System.Drawing.Size(192, 20)
-        Me.txt_phoneNumber.TabIndex = 16
         '
         'txt_firstName
         '
@@ -188,12 +181,20 @@ Partial Class PotentialClient
         Me.lbl_ContactAttempts.TabIndex = 26
         Me.lbl_ContactAttempts.Text = "Contact Attempts"
         '
+        'mtxt_phoneNumber
+        '
+        Me.mtxt_phoneNumber.Location = New System.Drawing.Point(119, 113)
+        Me.mtxt_phoneNumber.Name = "mtxt_phoneNumber"
+        Me.mtxt_phoneNumber.Size = New System.Drawing.Size(192, 20)
+        Me.mtxt_phoneNumber.TabIndex = 27
+        '
         'PotentialClient
         '
         Me.AccessibleRole = System.Windows.Forms.AccessibleRole.Alert
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(445, 248)
+        Me.Controls.Add(Me.mtxt_phoneNumber)
         Me.Controls.Add(Me.lbl_ContactAttempts)
         Me.Controls.Add(Me.cb_3)
         Me.Controls.Add(Me.cb_2)
@@ -205,7 +206,6 @@ Partial Class PotentialClient
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.txt_lastName)
         Me.Controls.Add(Me.txt_middleName)
-        Me.Controls.Add(Me.txt_phoneNumber)
         Me.Controls.Add(Me.txt_firstName)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -222,7 +222,6 @@ Partial Class PotentialClient
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents txt_lastName As System.Windows.Forms.TextBox
     Friend WithEvents txt_middleName As System.Windows.Forms.TextBox
-    Friend WithEvents txt_phoneNumber As System.Windows.Forms.TextBox
     Friend WithEvents txt_firstName As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
@@ -233,4 +232,5 @@ Partial Class PotentialClient
     Friend WithEvents cb_2 As System.Windows.Forms.CheckBox
     Friend WithEvents cb_3 As System.Windows.Forms.CheckBox
     Friend WithEvents lbl_ContactAttempts As System.Windows.Forms.Label
+    Friend WithEvents mtxt_phoneNumber As System.Windows.Forms.MaskedTextBox
 End Class

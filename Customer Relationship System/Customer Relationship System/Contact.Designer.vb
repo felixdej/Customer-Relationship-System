@@ -26,7 +26,6 @@ Partial Class Contact
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txt_firstName = New System.Windows.Forms.TextBox()
-        Me.txt_phoneNumber = New System.Windows.Forms.TextBox()
         Me.txt_middleName = New System.Windows.Forms.TextBox()
         Me.txt_lastName = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -35,6 +34,7 @@ Partial Class Contact
         Me.btn_NewContact = New System.Windows.Forms.Button()
         Me.lbl_test = New System.Windows.Forms.Label()
         Me.btn_Back = New System.Windows.Forms.Button()
+        Me.mtxt_phoneNumber = New System.Windows.Forms.MaskedTextBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -73,13 +73,6 @@ Partial Class Contact
         Me.txt_firstName.Name = "txt_firstName"
         Me.txt_firstName.Size = New System.Drawing.Size(192, 20)
         Me.txt_firstName.TabIndex = 1
-        '
-        'txt_phoneNumber
-        '
-        Me.txt_phoneNumber.Location = New System.Drawing.Point(120, 113)
-        Me.txt_phoneNumber.Name = "txt_phoneNumber"
-        Me.txt_phoneNumber.Size = New System.Drawing.Size(192, 20)
-        Me.txt_phoneNumber.TabIndex = 4
         '
         'txt_middleName
         '
@@ -151,11 +144,19 @@ Partial Class Contact
         Me.btn_Back.Text = "Back"
         Me.btn_Back.UseVisualStyleBackColor = True
         '
-        'Contact_Form
+        'mtxt_phoneNumber
+        '
+        Me.mtxt_phoneNumber.Location = New System.Drawing.Point(120, 112)
+        Me.mtxt_phoneNumber.Name = "mtxt_phoneNumber"
+        Me.mtxt_phoneNumber.Size = New System.Drawing.Size(192, 20)
+        Me.mtxt_phoneNumber.TabIndex = 28
+        '
+        'Contact
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(445, 248)
+        Me.Controls.Add(Me.mtxt_phoneNumber)
         Me.Controls.Add(Me.btn_Back)
         Me.Controls.Add(Me.lbl_test)
         Me.Controls.Add(Me.btn_NewContact)
@@ -164,12 +165,11 @@ Partial Class Contact
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.txt_lastName)
         Me.Controls.Add(Me.txt_middleName)
-        Me.Controls.Add(Me.txt_phoneNumber)
         Me.Controls.Add(Me.txt_firstName)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "Contact_Form"
+        Me.Name = "Contact"
         Me.Text = "Customer Relationship System - Contact"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -179,7 +179,6 @@ Partial Class Contact
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents txt_firstName As System.Windows.Forms.TextBox
-    Friend WithEvents txt_phoneNumber As System.Windows.Forms.TextBox
     Friend WithEvents txt_middleName As System.Windows.Forms.TextBox
     Friend WithEvents txt_lastName As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
@@ -188,4 +187,5 @@ Partial Class Contact
     Friend WithEvents btn_NewContact As System.Windows.Forms.Button
     Friend WithEvents lbl_test As System.Windows.Forms.Label
     Friend WithEvents btn_Back As System.Windows.Forms.Button
+    Friend WithEvents mtxt_phoneNumber As System.Windows.Forms.MaskedTextBox
 End Class

@@ -11,3 +11,15 @@ C:\Users\Felix\Documents\Visual Studio 2012\Projects\Customer-Relationship-Syste
 C:\Users\Felix\Documents\Visual Studio 2012\Projects\Customer-Relationship-System\Customer Relationship System\Customer Relationship System\obj\Debug\Customer Relationship System.pdb
 C:\Users\Felix\Documents\Visual Studio 2012\Projects\Customer-Relationship-System\Customer Relationship System\Customer Relationship System\obj\Debug\Customer_Relationship_System.PotentialClient.resources
 C:\Users\Felix\Documents\Visual Studio 2012\Projects\Customer-Relationship-System\Customer Relationship System\Customer Relationship System\obj\Debug\Customer_Relationship_System.Contact.resources
+C:\Users\Bryan\Source\Repos\Customer-Relationship-System\Customer Relationship System\Customer Relationship System\bin\Debug\Customer Relationship System.exe.config
+C:\Users\Bryan\Source\Repos\Customer-Relationship-System\Customer Relationship System\Customer Relationship System\obj\Debug\Customer Relationship System.exe
+C:\Users\Bryan\Source\Repos\Customer-Relationship-System\Customer Relationship System\Customer Relationship System\obj\Debug\Customer Relationship System.xml
+C:\Users\Bryan\Source\Repos\Customer-Relationship-System\Customer Relationship System\Customer Relationship System\obj\Debug\Customer Relationship System.pdb
+C:\Users\Bryan\Source\Repos\Customer-Relationship-System\Customer Relationship System\Customer Relationship System\bin\Debug\Customer Relationship System.exe
+C:\Users\Bryan\Source\Repos\Customer-Relationship-System\Customer Relationship System\Customer Relationship System\bin\Debug\Customer Relationship System.pdb
+C:\Users\Bryan\Source\Repos\Customer-Relationship-System\Customer Relationship System\Customer Relationship System\bin\Debug\Customer Relationship System.xml
+C:\Users\Bryan\Source\Repos\Customer-Relationship-System\Customer Relationship System\Customer Relationship System\obj\Debug\Customer_Relationship_System.PotentialClient.resources
+C:\Users\Bryan\Source\Repos\Customer-Relationship-System\Customer Relationship System\Customer Relationship System\obj\Debug\Customer_Relationship_System.Contact.resources
+C:\Users\Bryan\Source\Repos\Customer-Relationship-System\Customer Relationship System\Customer Relationship System\obj\Debug\Customer_Relationship_System.CustomerRelationshipSystem.resources
+C:\Users\Bryan\Source\Repos\Customer-Relationship-System\Customer Relationship System\Customer Relationship System\obj\Debug\Customer_Relationship_System.Resources.resources
+C:\Users\Bryan\Source\Repos\Customer-Relationship-System\Customer Relationship System\Customer Relationship System\obj\Debug\Customer Relationship System.vbproj.GenerateResource.Cache
