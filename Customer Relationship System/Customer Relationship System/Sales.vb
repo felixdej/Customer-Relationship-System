@@ -1,16 +1,18 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class Sales
+    Dim fnames As New List(Of String)
+    Dim mnames As New List(Of String)
+    Dim lnames As New List(Of String)
+    Dim pnumber As New List(Of String)
+    Dim email As New List(Of String)
+
 
     Private Sub Sales_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim connstring As String = ("Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Bryan\Documents\Customers.mdf;Integrated Security=True;Connect Timeout=30")
         Dim conn As New SqlConnection(connstring)
         Dim cmd As New SqlCommand("SELECT * FROM Customer_Info", conn)
-        Dim fnames As New List(Of String)
-        Dim mnames As New List(Of String)
-        Dim lnames As New List(Of String)
-        Dim pnumber As New List(Of String)
-        Dim email As New List(Of String)
+
 
 
         '******Retreives First Name only from the database to populate the combobox
@@ -33,6 +35,12 @@ Public Class Sales
         Catch ex As Exception
             MessageBox.Show(e.ToString)
         End Try
+
+
+    End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+        TextBox1.Text = CStr(ComboBox1.SelectedItem)
 
 
     End Sub
