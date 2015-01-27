@@ -13,4 +13,9 @@
         Me.Hide()
         PotentialClient.Show()
     End Sub
+
+    Private Sub btn_Sales_Click(sender As Object, e As EventArgs) Handles btn_Sales.Click
+        Me.Hide()
+        Sales.Show()
+    End Sub
 End Class

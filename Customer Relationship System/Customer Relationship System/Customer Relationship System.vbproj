@@ -83,6 +83,12 @@
     <Compile Include="Potential Client.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Sales.Designer.vb">
+      <DependentUpon>Sales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sales.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TeamA_CustomerRelationshipSystem.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Contact.resx">
       <DependentUpon>Contact.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales.resx">
+      <DependentUpon>Sales.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TeamA_CustomerRelationshipSystem.resx">
       <DependentUpon>TeamA_CustomerRelationshipSystem.vb</DependentUpon>
