@@ -17,7 +17,7 @@ Public Class Contact
         End If
 
         '***************************DATABASE CONNECTION INFORMATION*******************************
-        Dim con As New SqlClient.SqlConnection("Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Bryan\Documents\Customers.mdf;Integrated Security=True;Connect Timeout=30")
+        Dim con As New SqlClient.SqlConnection("Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Bryan\Source\Repos\Customer-Relationship-System\Customer Relationship System\Customer Relationship System\Customers.mdf;Integrated Security=True;Connect Timeout=30")
         Dim cmd As New SqlCommand()
         cmd.Connection = con
         con.Open()

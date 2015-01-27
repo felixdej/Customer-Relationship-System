@@ -9,7 +9,7 @@ Public Class Sales
 
 
     Private Sub Sales_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim connstring As String = ("Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Bryan\Documents\Customers.mdf;Integrated Security=True;Connect Timeout=30")
+        Dim connstring As String = ("Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Bryan\Source\Repos\Customer-Relationship-System\Customer Relationship System\Customer Relationship System\Customers.mdf;Integrated Security=True;Connect Timeout=30")
         Dim conn As New SqlConnection(connstring)
         Dim cmd As New SqlCommand("SELECT * FROM Customer_Info", conn)
 
@@ -40,8 +40,15 @@ Public Class Sales
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
-        TextBox1.Text = CStr(ComboBox1.SelectedItem)
 
+        Dim combobox As ComboBox = CType(sender, ComboBox)
+
+        If combobox.SelectedItem IsNot Nothing Then
+            Dim curValue = CType(combobox.SelectedIndex, String)
+
+            TextBox1.Text = pnumber(curValue)
+            TextBox2.Text = email(curValue)
+        End If
 
     End Sub
 End Class
