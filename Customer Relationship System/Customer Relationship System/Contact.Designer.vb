@@ -155,7 +155,7 @@ Partial Class Contact
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(445, 248)
+        Me.ClientSize = New System.Drawing.Size(445, 244)
         Me.Controls.Add(Me.mtxt_phoneNumber)
         Me.Controls.Add(Me.btn_Back)
         Me.Controls.Add(Me.lbl_test)

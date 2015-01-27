@@ -1,4 +1,5 @@
 ﻿Imports System.Text.RegularExpressions
+Imports System.Data.SqlClient
 
 Public Class Contact
     'Var
@@ -14,6 +15,53 @@ Public Class Contact
         Else
             lbl_test.Text = "Empty Field"
         End If
+
+        '***************************DATABSE CONNECTION INFORMATION*******************************
+        Dim con As New SqlClient.SqlConnection("Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Bryan\Documents\Customers.mdf;Integrated Security=True;Connect Timeout=30")
+        Dim cmd As New SqlCommand()
+        cmd.Connection = con
+        con.Open()
+        cmd.CommandText = "INSERT INTO Customer_Info values(@firstName, @middleName, @lastName, @phoneNumber, @email)"
+
+        cmd.Parameters.Add(New SqlParameter("@firstName", SqlDbType.VarChar, 50))
+        cmd.Parameters("@firstName").Value = txt_firstName.Text
+
+
+        cmd.Parameters.Add(New SqlParameter("@middleName", SqlDbType.VarChar, 50))
+        cmd.Parameters("@middleName").Value = txt_middleName.Text
+
+
+        cmd.Parameters.Add(New SqlParameter("@lastName", SqlDbType.VarChar, 50))
+        cmd.Parameters("@lastName").Value = txt_lastName.Text
+
+
+        cmd.Parameters.Add(New SqlParameter("@phoneNumber", SqlDbType.VarChar, 50))
+        cmd.Parameters("@phoneNumber").Value = mtxt_phoneNumber.Text
+
+
+        cmd.Parameters.Add(New SqlParameter("@email", SqlDbType.VarChar, 50))
+        cmd.Parameters("@email").Value = txt_email.Text
+        '**************************END DATABASE INFORMATION**********************************************
+
+        Try
+            cmd.ExecuteNonQuery()
+            MessageBox.Show("Successful Database Insert")
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString)
+
+        End Try
+
+        clearFields()
+        Me.Close()
+
+    End Sub
+
+    Private Sub clearFields()
+        txt_firstName.Text = ""
+        txt_middleName.Text = ""
+        txt_lastName.Text = ""
+        mtxt_phoneNumber.Text = ""
+        txt_email.Text = ""
     End Sub
 
     Private Sub btn_Back_Click(sender As Object, e As EventArgs) Handles btn_Back.Click
@@ -81,7 +129,7 @@ Public Class Contact
 
         Dim match As System.Text.RegularExpressions.Match = Regex.Match(txt_email.Text.Trim(), pattern, RegexOptions.IgnoreCase)
         If (match.Success) Then
-            MessageBox.Show("Success", "Checking")
+
         Else
             MessageBox.Show("Please enter a valid email id", "Checking")
             txt_email.Clear()
@@ -90,5 +138,9 @@ Public Class Contact
 
     Private Sub Contact_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.mtxt_phoneNumber.Mask = "(000) 000-0000"
+
+
+
+
     End Sub
 End Class
