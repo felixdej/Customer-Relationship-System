@@ -23,21 +23,21 @@ Partial Class Sales
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.CboCustomerNumber = New System.Windows.Forms.ComboBox()
         Me.lblPhoneNumber = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.lblEmail = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txt_email = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txt_LastName = New System.Windows.Forms.TextBox()
+        Me.txt_FirstName = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.mtxt_phoneNumber = New System.Windows.Forms.MaskedTextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -51,13 +51,13 @@ Partial Class Sales
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Customer Number:"
         '
-        'ComboBox1
+        'CboCustomerNumber
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(114, 24)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(100, 21)
-        Me.ComboBox1.TabIndex = 1
+        Me.CboCustomerNumber.FormattingEnabled = True
+        Me.CboCustomerNumber.Location = New System.Drawing.Point(114, 24)
+        Me.CboCustomerNumber.Name = "CboCustomerNumber"
+        Me.CboCustomerNumber.Size = New System.Drawing.Size(100, 21)
+        Me.CboCustomerNumber.TabIndex = 1
         '
         'lblPhoneNumber
         '
@@ -68,16 +68,6 @@ Partial Class Sales
         Me.lblPhoneNumber.TabIndex = 2
         Me.lblPhoneNumber.Text = "Phone Number:"
         '
-        'TextBox1
-        '
-        Me.TextBox1.BackColor = System.Drawing.SystemColors.Control
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(114, 101)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 13)
-        Me.TextBox1.TabIndex = 3
-        '
         'lblEmail
         '
         Me.lblEmail.AutoSize = True
@@ -87,15 +77,15 @@ Partial Class Sales
         Me.lblEmail.TabIndex = 4
         Me.lblEmail.Text = "Email:"
         '
-        'TextBox2
+        'txt_email
         '
-        Me.TextBox2.BackColor = System.Drawing.SystemColors.Control
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox2.Enabled = False
-        Me.TextBox2.Location = New System.Drawing.Point(114, 124)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 13)
-        Me.TextBox2.TabIndex = 5
+        Me.txt_email.BackColor = System.Drawing.SystemColors.Control
+        Me.txt_email.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txt_email.Enabled = False
+        Me.txt_email.Location = New System.Drawing.Point(114, 124)
+        Me.txt_email.Name = "txt_email"
+        Me.txt_email.Size = New System.Drawing.Size(100, 13)
+        Me.txt_email.TabIndex = 5
         '
         'Label2
         '
@@ -115,38 +105,38 @@ Partial Class Sales
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "First Name:"
         '
-        'TextBox3
+        'txt_LastName
         '
-        Me.TextBox3.BackColor = System.Drawing.SystemColors.Control
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox3.Enabled = False
-        Me.TextBox3.HideSelection = False
-        Me.TextBox3.Location = New System.Drawing.Point(114, 77)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 13)
-        Me.TextBox3.TabIndex = 8
+        Me.txt_LastName.BackColor = System.Drawing.SystemColors.Control
+        Me.txt_LastName.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txt_LastName.Enabled = False
+        Me.txt_LastName.HideSelection = False
+        Me.txt_LastName.Location = New System.Drawing.Point(114, 77)
+        Me.txt_LastName.Name = "txt_LastName"
+        Me.txt_LastName.Size = New System.Drawing.Size(100, 13)
+        Me.txt_LastName.TabIndex = 8
         '
-        'TextBox4
+        'txt_FirstName
         '
-        Me.TextBox4.BackColor = System.Drawing.SystemColors.Control
-        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox4.Enabled = False
-        Me.TextBox4.Location = New System.Drawing.Point(114, 51)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 13)
-        Me.TextBox4.TabIndex = 9
+        Me.txt_FirstName.BackColor = System.Drawing.SystemColors.Control
+        Me.txt_FirstName.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txt_FirstName.Enabled = False
+        Me.txt_FirstName.Location = New System.Drawing.Point(114, 51)
+        Me.txt_FirstName.Name = "txt_FirstName"
+        Me.txt_FirstName.Size = New System.Drawing.Size(100, 13)
+        Me.txt_FirstName.TabIndex = 9
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.mtxt_phoneNumber)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
+        Me.GroupBox1.Controls.Add(Me.txt_FirstName)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
+        Me.GroupBox1.Controls.Add(Me.txt_LastName)
+        Me.GroupBox1.Controls.Add(Me.CboCustomerNumber)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.lblPhoneNumber)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
+        Me.GroupBox1.Controls.Add(Me.txt_email)
         Me.GroupBox1.Controls.Add(Me.lblEmail)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
@@ -200,6 +190,16 @@ Partial Class Sales
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "Annual Sales:"
         '
+        'mtxt_phoneNumber
+        '
+        Me.mtxt_phoneNumber.BackColor = System.Drawing.SystemColors.Control
+        Me.mtxt_phoneNumber.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.mtxt_phoneNumber.Enabled = False
+        Me.mtxt_phoneNumber.Location = New System.Drawing.Point(114, 101)
+        Me.mtxt_phoneNumber.Name = "mtxt_phoneNumber"
+        Me.mtxt_phoneNumber.Size = New System.Drawing.Size(100, 13)
+        Me.mtxt_phoneNumber.TabIndex = 10
+        '
         'Sales
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -217,19 +217,19 @@ Partial Class Sales
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents CboCustomerNumber As System.Windows.Forms.ComboBox
     Friend WithEvents lblPhoneNumber As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents lblEmail As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents txt_email As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents txt_LastName As System.Windows.Forms.TextBox
+    Friend WithEvents txt_FirstName As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents mtxt_phoneNumber As System.Windows.Forms.MaskedTextBox
 End Class

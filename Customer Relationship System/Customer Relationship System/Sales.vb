@@ -18,7 +18,7 @@ Public Class Sales
         Dim cmd As New SqlCommand("SELECT * FROM Customer_Info", conn)
         Dim cmd2 As New SqlCommand("SELECT * FROM Sales", conn)
 
-
+        Me.mtxt_phoneNumber.Mask = "(000) 000-0000"
 
         '******Retreives First Name only from the database to populate the combobox
         Try
@@ -44,8 +44,8 @@ Public Class Sales
             rd2.Close()
             conn.Close()
 
-            Me.ComboBox1.Items.Clear()
-            Me.ComboBox1.Items.AddRange(id.ToArray)
+            Me.CboCustomerNumber.Items.Clear()
+            Me.CboCustomerNumber.Items.AddRange(id.ToArray)
 
         Catch ex As Exception
             MessageBox.Show(e.ToString)
@@ -54,17 +54,17 @@ Public Class Sales
 
     End Sub
 
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CboCustomerNumber.SelectedIndexChanged
 
         Dim combobox As ComboBox = CType(sender, ComboBox)
 
         If combobox.SelectedItem IsNot Nothing Then
             Dim curValue = CType(combobox.SelectedIndex, String)
 
-            TextBox1.Text = pnumber(curValue)
-            TextBox2.Text = email(curValue)
-            TextBox4.Text = fnames(curValue)
-            TextBox3.Text = lnames(curValue)
+            mtxt_phoneNumber.Text = pnumber(curValue)
+            txt_email.Text = email(curValue)
+            txt_FirstName.Text = fnames(curValue)
+            txt_LastName.Text = lnames(curValue)
             TextBox6.Text = FormatCurrency(asales(curValue))
             TextBox5.Text = FormatCurrency(msales(curValue))
         End If
