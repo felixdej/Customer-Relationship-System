@@ -65,8 +65,8 @@ Public Class Sales
             TextBox2.Text = email(curValue)
             TextBox4.Text = fnames(curValue)
             TextBox3.Text = lnames(curValue)
-            TextBox6.Text = asales(curValue)
-            TextBox5.Text = msales(curValue)
+            TextBox6.Text = FormatCurrency(asales(curValue))
+            TextBox5.Text = FormatCurrency(msales(curValue))
         End If
 
     End Sub

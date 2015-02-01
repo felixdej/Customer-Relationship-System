@@ -24,3 +24,4 @@ C:\Users\Bryan\Source\Repos\Customer-Relationship-System\Customer Relationship S
 C:\Users\Bryan\Source\Repos\Customer-Relationship-System\Customer Relationship System\Customer Relationship System\obj\Debug\Customer_Relationship_System.Resources.resources
 C:\Users\Bryan\Source\Repos\Customer-Relationship-System\Customer Relationship System\Customer Relationship System\obj\Debug\Customer Relationship System.vbproj.GenerateResource.Cache
 C:\Users\Bryan\Source\Repos\Customer-Relationship-System\Customer Relationship System\Customer Relationship System\obj\Debug\Customer_Relationship_System.Sales.resources
+C:\Users\Bryan\Source\Repos\Customer-Relationship-System\Customer Relationship System\Customer Relationship System\obj\Debug\Customer Relationship System.vbprojResolveAssemblyReference.cache

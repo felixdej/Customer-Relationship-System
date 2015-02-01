@@ -1,10 +1,12 @@
 ﻿Imports System.Text.RegularExpressions
 Imports System.Data.SqlClient
+Imports System.IO
 
 Public Class Contact
     'Var
     Public customer(99) As Customer
     Private count As Integer
+    Private newContact As Array = {"firstName", "middleName", "lastName", "phoneNumber", "email"}
 
     Private Sub btn_NewContact_Click(sender As Object, e As EventArgs) Handles btn_NewContact.Click
         If (txt_firstName.Text <> "" And txt_middleName.Text <> "" And txt_lastName.Text <> "" And Val(mtxt_phoneNumber.Text) <> 0 And txt_email.Text <> "") Then
@@ -139,8 +141,37 @@ Public Class Contact
     Private Sub Contact_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.mtxt_phoneNumber.Mask = "(000) 000-0000"
 
+        Me.AllowDrop = True
 
 
+    End Sub
 
+    Private Sub Contact_DragDrop(sender As Object, e As DragEventArgs) Handles MyBase.DragDrop
+        Dim inputFile As StreamReader
+        Dim files() As String = e.Data.GetData(DataFormats.FileDrop)
+        Dim j As Integer
+        Try
+            inputFile = File.OpenText(files(j))
+            j = j + 1
+            Dim i As Integer
+            For i = 0 To (newContact.Length - 1)
+                newContact(i) = CStr(inputFile.ReadLine)
+            Next
+
+            txt_firstName.Text = newContact(0)
+            txt_middleName.Text = newContact(1)
+            txt_lastName.Text = newContact(2)
+            mtxt_phoneNumber.Text = newContact(3)
+            txt_email.Text = newContact(4)
+
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString())
+        End Try
+    End Sub
+
+    Private Sub Contact_DragEnter(sender As Object, e As DragEventArgs) Handles MyBase.DragEnter
+        If e.Data.GetDataPresent(DataFormats.FileDrop) Then
+            e.Effect = DragDropEffects.Copy
+        End If
     End Sub
 End Class

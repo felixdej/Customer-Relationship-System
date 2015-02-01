@@ -34,10 +34,10 @@ Partial Class Sales
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -70,11 +70,12 @@ Partial Class Sales
         '
         'TextBox1
         '
-        Me.TextBox1.BackColor = System.Drawing.SystemColors.Window
+        Me.TextBox1.BackColor = System.Drawing.SystemColors.Control
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox1.Enabled = False
         Me.TextBox1.Location = New System.Drawing.Point(114, 101)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(100, 13)
         Me.TextBox1.TabIndex = 3
         '
         'lblEmail
@@ -88,11 +89,12 @@ Partial Class Sales
         '
         'TextBox2
         '
-        Me.TextBox2.BackColor = System.Drawing.SystemColors.Window
+        Me.TextBox2.BackColor = System.Drawing.SystemColors.Control
+        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox2.Enabled = False
         Me.TextBox2.Location = New System.Drawing.Point(114, 124)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(100, 13)
         Me.TextBox2.TabIndex = 5
         '
         'Label2
@@ -115,16 +117,23 @@ Partial Class Sales
         '
         'TextBox3
         '
+        Me.TextBox3.BackColor = System.Drawing.SystemColors.Control
+        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox3.Enabled = False
+        Me.TextBox3.HideSelection = False
         Me.TextBox3.Location = New System.Drawing.Point(114, 77)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(100, 13)
         Me.TextBox3.TabIndex = 8
         '
         'TextBox4
         '
+        Me.TextBox4.BackColor = System.Drawing.SystemColors.Control
+        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox4.Enabled = False
         Me.TextBox4.Location = New System.Drawing.Point(114, 51)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox4.Size = New System.Drawing.Size(100, 13)
         Me.TextBox4.TabIndex = 9
         '
         'GroupBox1
@@ -159,14 +168,19 @@ Partial Class Sales
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Recent Sales"
         '
-        'Label4
+        'TextBox6
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(15, 27)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(72, 13)
-        Me.Label4.TabIndex = 0
-        Me.Label4.Text = "Annual Sales:"
+        Me.TextBox6.Location = New System.Drawing.Point(113, 24)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox6.TabIndex = 3
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Location = New System.Drawing.Point(113, 50)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox5.TabIndex = 2
         '
         'Label5
         '
@@ -177,19 +191,14 @@ Partial Class Sales
         Me.Label5.TabIndex = 1
         Me.Label5.Text = "Montly Sales Avg:"
         '
-        'TextBox5
+        'Label4
         '
-        Me.TextBox5.Location = New System.Drawing.Point(113, 50)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox5.TabIndex = 2
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(113, 24)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox6.TabIndex = 3
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(15, 27)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(72, 13)
+        Me.Label4.TabIndex = 0
+        Me.Label4.Text = "Annual Sales:"
         '
         'Sales
         '
